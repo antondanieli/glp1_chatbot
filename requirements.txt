@@ -1,0 +1,4 @@
+rasa==3.6.21
+spacy
+numpy
+pydantic==1.10.13
