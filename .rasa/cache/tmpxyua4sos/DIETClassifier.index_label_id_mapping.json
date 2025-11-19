@@ -1,0 +1,18 @@
+{
+  "0": "affirm",
+  "1": "ask_data_safe",
+  "2": "ask_how_it_works",
+  "3": "ask_how_long_check_takes",
+  "4": "ask_is_legit",
+  "5": "ask_need_prescription",
+  "6": "ask_price_difference",
+  "7": "ask_prices",
+  "8": "ask_sell_medication",
+  "9": "ask_state_eligibility",
+  "10": "ask_support",
+  "11": "ask_what_is_medfinder",
+  "12": "deny",
+  "13": "goodbye",
+  "14": "greet",
+  "15": "out_of_scope"
+}

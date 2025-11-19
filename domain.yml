@@ -1,0 +1,131 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - ask_what_is_medfinder
+  - ask_how_it_works
+  - ask_is_legit
+  - ask_sell_medication
+  - ask_price_difference
+  - ask_data_safe
+  - ask_need_prescription
+  - ask_state_eligibility
+  - ask_prices
+  - ask_how_long_check_takes
+  - ask_support
+  - out_of_scope
+  - how_to_start
+
+responses:
+  utter_greet:
+    - text: >
+        Hi! I’m the MedFinder support assistant. I can answer questions
+        about how we compare tirzepatide prices and how the site works.
+
+  utter_goodbye:
+    - text: >
+        Thanks for chatting with us. If you’d like to see offers, just
+        click “Check Tirzepatide Prices in Your State” on the page. Have a great day!
+
+  utter_what_is_medfinder:
+    - text: >
+        MedFinder helps you compare transparent tirzepatide (GLP-1) prices
+        from verified telehealth providers. We don’t sell or prescribe
+        medication ourselves — we show you real discounts and options
+        available where you live.
+
+  utter_how_it_works:
+    - text: >
+        Here’s how MedFinder works:
+        1) Answer a few quick questions to start the search.
+        2) We compare top GLP-1 offers in your area, with savings that can
+        reach up to about 90%.
+        3) You pick an option and start saving, with medication delivered
+        to your door through the provider you choose.
+
+  utter_is_legit:
+    - text: >
+        Yes. MedFinder compares prices from licensed telehealth providers
+        and pharmacies. Our partners are HIPAA-compliant, and we focus on
+        transparent pricing with no hidden fees.
+
+  utter_sell_medication:
+    - text: >
+        No. MedFinder does not sell or prescribe medication. We simply help
+        you find the most affordable, legal telehealth providers offering
+        tirzepatide and other GLP-1s.
+
+  utter_price_difference:
+    - text: >
+        GLP-1 prices vary a lot because each clinic sets its own pricing,
+        dosage options, and refill structure. That’s why people see quotes
+        from around $149 up to over $1200 per month. MedFinder was built to
+        bring transparency to this confusing market.
+
+  utter_data_safe:
+    - text: >
+        Yes, your data is treated carefully. MedFinder does not store
+        medical records or share your personal information for marketing.
+        Our partners are HIPAA-compliant telehealth providers.
+
+  utter_need_prescription:
+    - text: >
+        Yes, a proper medical evaluation is required. All providers we list
+        require a consultation before prescribing GLP-1 medications like
+        tirzepatide. MedFinder just helps you connect with those providers.
+
+  utter_state_eligibility:
+    - text: >
+        Most states qualify, but availability can vary. When you click
+        “Check Tirzepatide Prices in Your State” and enter your details,
+        we’ll show you which options are available where you live.
+
+  utter_prices:
+    - text: >
+        Prices for tirzepatide can range roughly from around $149 to over
+        $1200 per month, depending on your clinic, state, and dosage.
+        MedFinder compares offers so you can see clear pricing and
+        potential savings — sometimes up to about 90% off typical quotes.
+
+  utter_how_long_check_takes:
+    - text: >
+        The online check is fast — it usually takes about 15 seconds to
+        answer the questions and see your available offers.
+
+  utter_support:
+    - text: >
+        I’m here to help! You can ask me about how MedFinder works,
+        pricing, safety, prescriptions, or state availability. What would
+        you like to know?
+
+  utter_out_of_scope:
+    - text: >
+        I’m mainly here to help with questions about MedFinder, GLP-1 price
+        comparisons, and this page. Could you ask your question again, but
+        related to tirzepatide or how our service works?
+
+  utter_default:
+    - text: >
+        I’m not sure I understood that. Could you rephrase your question
+        about MedFinder or tirzepatide pricing?
+
+  utter_how_to_start:
+    - text: |
+        Super simple — just click the "Check Tirzepatide Prices" button and answer 6 quick questions (takes ~60 seconds):
+
+        You’ll instantly see:
+        • Your exact monthly price
+        • Which medication the doctor recommends for you
+        • If you qualify (95 %+ of people do)
+
+      buttons:
+        - title: Check tirzepatide prices in your state
+          payload: /how_to_start
+          url: https://top5weightlossmeds.com/
+          
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

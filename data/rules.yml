@@ -1,0 +1,82 @@
+version: "3.1"
+
+rules:
+
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Explain what MedFinder is
+    steps:
+      - intent: ask_what_is_medfinder
+      - action: utter_what_is_medfinder
+
+  - rule: Explain how it works
+    steps:
+      - intent: ask_how_it_works
+      - action: utter_how_it_works
+
+  - rule: Answer if service is legit
+    steps:
+      - intent: ask_is_legit
+      - action: utter_is_legit
+
+  - rule: Clarify selling medication
+    steps:
+      - intent: ask_sell_medication
+      - action: utter_sell_medication
+
+  - rule: Explain price differences
+    steps:
+      - intent: ask_price_difference
+      - action: utter_price_difference
+
+  - rule: Explain data safety
+    steps:
+      - intent: ask_data_safe
+      - action: utter_data_safe
+
+  - rule: Explain prescription requirement
+    steps:
+      - intent: ask_need_prescription
+      - action: utter_need_prescription
+
+  - rule: Explain state eligibility
+    steps:
+      - intent: ask_state_eligibility
+      - action: utter_state_eligibility
+
+  - rule: Answer pricing questions
+    steps:
+      - intent: ask_prices
+      - action: utter_prices
+
+  - rule: Answer how long the check takes
+    steps:
+      - intent: ask_how_long_check_takes
+      - action: utter_how_long_check_takes
+
+  - rule: General support
+    steps:
+      - intent: ask_support
+      - action: utter_support
+
+  - rule: Handle out of scope
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope
+
+  - rule: Fallback
+    steps:
+      - action: utter_default
+
+  - rule: Explain how to start + push CTA
+    steps:
+    - intent: how_to_start
+    - action: utter_how_to_start

@@ -1,0 +1,152 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey
+      - good morning
+      - good evening
+      - hi there
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you
+      - talk to you later
+      - thanks, bye
+
+  - intent: affirm
+    examples: |
+      - yes
+      - yeah
+      - correct
+      - sure
+      - exactly
+      - that sounds good
+
+  - intent: deny
+    examples: |
+      - no
+      - nope
+      - not really
+      - I don't think so
+
+  - intent: ask_what_is_medfinder
+    examples: |
+      - what is MedFinder?
+      - what do you do?
+      - what is this site about?
+      - can you explain your service?
+      - tell me about MedFinder
+      - how does this page help me?
+
+  - intent: ask_how_it_works
+    examples: |
+      - how does this work?
+      - how does MedFinder work?
+      - what are the steps?
+      - how do I get started?
+      - how do I use this site?
+
+  - intent: ask_is_legit
+    examples: |
+      - is this legit?
+      - are you legit?
+      - is this a scam?
+      - can I trust this?
+      - is MedFinder trustworthy?
+
+  - intent: ask_sell_medication
+    examples: |
+      - do you sell medication?
+      - can I buy tirzepatide here?
+      - do you prescribe GLP 1s?
+      - can I get my meds from you?
+      - are you a pharmacy?
+
+  - intent: ask_price_difference
+    examples: |
+      - why are prices so different?
+      - why does tirzepatide cost so much in some places?
+      - why is there such a big price range?
+      - why are the prices all over the place?
+
+  - intent: ask_data_safe
+    examples: |
+      - is my data safe?
+      - what about my privacy?
+      - do you store my medical data?
+      - do you share my personal information?
+      - how secure is this?
+
+  - intent: ask_need_prescription
+    examples: |
+      - do I need a prescription?
+      - can I get tirzepatide without a prescription?
+      - will a doctor be involved?
+      - do I need a consultation first?
+
+  - intent: ask_state_eligibility
+    examples: |
+      - does every state qualify?
+      - is this available in my state?
+      - can I use this if I live in [Texas](state)?
+      - is my state supported?
+      - which states do you cover?
+
+  - intent: ask_prices
+    examples: |
+      - how much does tirzepatide cost?
+      - what prices can I expect?
+      - how much can I save?
+      - what kind of discounts do you find?
+      - how cheap can it get?
+
+  - intent: ask_how_long_check_takes
+    examples: |
+      - how long does the price check take?
+      - how fast is this?
+      - does this only take 15 seconds?
+      - how quickly do I get results?
+
+  - intent: ask_support
+    examples: |
+      - I need help
+      - I have a question about this page
+      - can someone assist me?
+      - I’m confused about how to use this
+      - support please
+
+  - intent: out_of_scope
+    examples: |
+      - tell me a joke
+      - what's the weather today?
+      - can you help me with my homework?
+      - who is the president?
+      - random question not about tirzepatide
+
+  - intent: how_to_start
+    examples: |
+      - how do I start
+      - where do I start
+      - what should I do
+      - how does this work
+      - how do I get started
+      - what do I do next
+      - how do I begin
+      - what’s the first step
+      - how do I get the medication
+      - how do I order
+      - how do I buy this
+      - what do I click
+      - how to get tirzepatide
+      - how to get semaglutide
+      - I want to start
+      - ready to go
+      - let’s do this
+      - show me the prices
+      - check prices
+      - see if I qualify
